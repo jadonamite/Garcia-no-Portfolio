@@ -1,0 +1,40 @@
+.hero {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 6.75rem;
+   border-bottom: 0.5px solid #484848;
+}
+.profileImg {
+   width: 50%;
+   object-fit: contain;
+}
+.contacts {
+   display: flex;
+   align-items: center;
+
+   gap: 1rem;
+   margin-top: 2.5rem;
+}
+.btn {
+   background-color: var(--color-primary);
+   color: var(--color-black);
+   border-radius: 100px;
+   border: 1px solid #d3e97a;
+   cursor: pointer;
+   padding: 0.8rem 1.5rem;
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+.button {
+   border: none;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.btn:hover {
+   color: var(--color-primary);
+   background-color: var(--color-black);
+   transition: all 0.05s ease-in-out;
+}

@@ -1,0 +1,40 @@
+.about {
+   display: flex;
+   justify-content: space-between;
+
+   padding: 6.75rem;
+}
+.section-text {
+   width: 60%;
+}
+.abt-link {
+   display: inline-block;
+   /* border-bottom: 2px solid var(--color-primary); */
+   padding-bottom: 4px;
+   color: var(--color-primary);
+   margin: 4rem 0;
+   text-transform: uppercase;
+}
+
+.abt-link {
+   position: relative;
+}
+.abt-link:after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: aqua;
+   transition: width 0.3s cubic-bezier(0, 0.5, 0.5, 1);
+}
+.abt-link:hover:after {
+   width: 100%;
+   transition: width 0.3s cubic-bezier(0, 0.5, 0.5, 1);
+}
+svg {
+   width: 22px;
+   height: 22px;
+}

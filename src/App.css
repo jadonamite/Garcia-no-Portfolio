@@ -1,0 +1,72 @@
+:root {
+   --font-bebas: "Bebas Neue", sans-serif;
+   --font-manrope: "Manrope", serif;
+
+   --font-family-header: "Bebas Neue", cursive;
+   --font-family-text: "Manrope", sans-serif;
+   --font-family-link: "Inter", serif;
+
+   --color-white: #ffffff;
+   --color-black: #0a0a0a;
+   --color-primary: #d3e97a;
+   --color-secondary: #1a1a1a;
+   --color-tertiary: #c7c7c7;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   transition: all 0.3s ease-in-out;
+}
+
+body {
+   background-color: var(--color-black);
+   color: var(--color-white);
+   font-family: var(--font-manrope);
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+a {
+   color: inherit;
+   text-decoration: none;
+}
+.hero-header {
+   font-size: 6.31rem;
+   font-family: var(--font-family-header);
+   line-height: 6rem;
+}
+.hero-text {
+   font-size: 1.1rem;
+   font-family: var(--font-family-text);
+   font-weight: 300;
+   color: var(--color-tertiary);
+}
+.section-headers {
+   font-family: var(--font-family-text);
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+}
+.link-icons {
+   background-color: #222222;
+   color: #d3e97a;
+   padding: 5px;
+   border-radius: 100%;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+   svg {
+      width: 20px;
+      height: 20px;
+   }
+}
+
+.link-icons:hover {
+   background-color: #d3e97a;
+   transition: all 0 ease-in-out;
+   color: #222222;
+}
